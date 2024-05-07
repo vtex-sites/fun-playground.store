@@ -1,23 +1,22 @@
-
 module.exports = {
   seo: {
-  "title": "FastStore",
-  "description": "A fast and performant store framework",
-  "titleTemplate": "%s | FastStore",
-  "author": "FastStore"
-},
+    title: "FastStore",
+    description: "A fast and performant store framework",
+    titleTemplate: "%s | FastStore",
+    author: "FastStore",
+  },
 
   // Theming
-  theme: 'custom-theme',
+  theme: "custom-theme",
 
   // Ecommerce Platform
-  platform: 'vtex',
+  platform: "vtex",
 
   // Platform specific configs for API
   api: {
     storeId: "storeframework",
-    workspace: 'master',
-    environment: 'vtexcommercestable',
+    workspace: "playground",
+    environment: "vtexcommercestable",
     hideUnavailableItems: true,
     incrementAddress: false,
   },
@@ -39,7 +38,7 @@ module.exports = {
   },
 
   cart: {
-    id: '',
+    id: "",
     items: [],
     messages: [],
     shouldSplitItem: true,
@@ -53,7 +52,7 @@ module.exports = {
   accountUrl: "https://secure.vtexfaststore.com/api/io/account",
 
   previewRedirects: {
-    home: '/',
+    home: "/",
     plp: "/office",
     search: "/s?q=Brand",
     pdp: "/awesome-chair/p",
@@ -61,9 +60,9 @@ module.exports = {
 
   // Lighthouse CI
   lighthouse: {
-    server: process.env.BASE_SITE_URL || 'http://localhost:3000',
+    server: process.env.BASE_SITE_URL || "http://localhost:3000",
     pages: {
-      home: '/',
+      home: "/",
       pdp: "/awesome-chair/p",
       collection: "/office",
     },
@@ -72,13 +71,14 @@ module.exports = {
   // E2E CI
   cypress: {
     pages: {
-      home: '/',
+      home: "/",
       pdp: "/awesome-chair/p",
       collection: "/office",
-      collection_filtered: "/office/?category-1=office&brand=Brand&facets=category-1%2Cbrand%27",
+      collection_filtered:
+        "/office/?category-1=office&brand=Brand&facets=category-1%2Cbrand%27",
       search: "/s?q=Brand",
     },
-    browser: 'electron',
+    browser: "electron",
   },
 
   analytics: {
@@ -96,4 +96,4 @@ module.exports = {
       "https://storeframework.myvtex.com/cms-releases/webhook-releases",
     ],
   },
-}
+};
