@@ -1,6 +1,6 @@
 import { usePDP } from "@faststore/core";
 
-export function CustomQuantitySelector() {
+export default function CustomQuantitySelector() {
   const context = usePDP();
 
   console.log("🚀 ~ CustomQuantitySelector context:", context);

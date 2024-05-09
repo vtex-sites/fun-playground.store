@@ -1,5 +1,5 @@
 import { getOverriddenSection, ProductDetailsSection } from "@faststore/core";
-import { CustomQuantitySelector } from "../../CustomQuantitySelector/CustomQuantitySelector";
+import CustomQuantitySelector from "../../CustomQuantitySelector/CustomQuantitySelector";
 
 const CustomProductDetails = getOverriddenSection({
   Section: ProductDetailsSection,
