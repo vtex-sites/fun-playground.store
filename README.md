@@ -1,5 +1,7 @@
 # FastStore Playground
 
+moved to https://github.com/vtex-sites/playground.store
+
 This project serves as a compilation of examples that highlight the fundamental features of our framework. It is designed to complement our [official documentation](https://developers.vtex.com/docs/guides/faststore/docs-what-is-faststore), providing users with practical demonstrations of how to leverage from FastStore framework.
 
 Here you'll find examples of the following features:
